@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <h1>JavaScript Arrow Functions</h1>
+    <p>
+      Arrow functions provide a concise syntax to write functions in JavaScript
+    </p>
+    <p id="demo"></p>
+
+    <script>
+      function hellowworld() {
+        return "Hello World from traditional fuction";
+      }
+      const hellowworldArrow = () => "Hello world From Arrow Function";
+
+      //  Storing Traditional Function Into Variable;
+      let hellowworldvariable = hellowworld();
+      document.getElementById("demo").innerHTML =
+        hellowworldvariable + "<br>" + hellowworldArrow();
+    </script>
+  </body>
+</html>

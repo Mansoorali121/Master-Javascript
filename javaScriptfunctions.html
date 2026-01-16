@@ -3,21 +3,27 @@
 <body>
 <h1>JavaScript Functions</h1>
 
-<p>You can call functions from events.</p>
+<p>Parameters and Arguements In Functions: .</p>
 
-<button onclick="onpressbtn()">Click to Show Name</button>
+<!-- <button onclick="onpressbtn()">Click to Show Name</button> -->
 
 <p id="demo"></p>
 
 <script>
 
-function world(){
-    return "Hello user";
-}
-function onpressbtn(){
-    document.getElementById("demo").innerHTML = world();
+// function world(){
+//     return "Hello user";
+// }
+// function onpressbtn(){
+//     document.getElementById("demo").innerHTML = world();
+
+// }
+function mathfunction(value1,value2){
+    return value1+value2;
 
 }
+let results = mathfunction(30,20);
+document.getElementById("demo").innerHTML = results;
 </script>
 </body>
 </html>
