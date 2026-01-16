@@ -11,9 +11,10 @@
         lastName: "Ali",
         id: 51,
         fullName: function () {
-          return this.firstName + " " + this.lastName;
+          return this.firstName + " " + this.lastName + "<br>" + " Id is: " + this.id;
         },
       };
+      delete person.id;
       document.getElementById("demo").innerHTML = person.fullName();
     </script>
   </body>
