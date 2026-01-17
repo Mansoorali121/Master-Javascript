@@ -1,21 +1,41 @@
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Objects</h1>
-    <h2>Object Methods</h2>
-    <p>A method is a function definition stored as a property value.</p>
-
+    <h3>Object Properties witgh JSON</h3>
     <p id="demo"></p>
+
     <script>
       const person = {
         firstName: "Mansoor",
         lastName: "Ali",
-        id: 51,
-        fullName: function () {
-          return this.firstName + " " + this.lastName + "<br>" + " Id is: " + this.id;
-        },
+        age: 24,
+        height: 5.8,
       };
-      delete person.id;
-      document.getElementById("demo").innerHTML = person.fullName();
+      let jsonConverted = JSON.stringify(person);
+      document.getElementById("demo").innerHTML = jsonConverted;
     </script>
   </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>JavaScript Objects</h1>
+    <h4>javaScript Object with This Keyword: </h4>
+    <p id="demo"></p>
+
+    <script>
+      const person = {
+        firstName: "Mansoor",
+        lastName: "Ali",
+        age: 24,
+        height: 5.8,
+        fullname: function (){
+          return this.firstName + " " + this.lastName;
+        }
+      };
+      document.getElementById("demo").innerHTML = person.fullname();
+     
+    </script>
+  </body>
+
 </html>
