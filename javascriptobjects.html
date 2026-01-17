@@ -20,7 +20,7 @@
 <html>
   <body>
     <h1>JavaScript Objects</h1>
-    <h4>javaScript Object with This Keyword: </h4>
+    <h4>javaScript Object with This Keyword:</h4>
     <p id="demo"></p>
 
     <script>
@@ -29,13 +29,11 @@
         lastName: "Ali",
         age: 24,
         height: 5.8,
-        fullname: function (){
-          return this.firstName + " " + this.lastName;
-        }
+        fullname: function () {
+          return (this.firstName + " " + this.lastName).toUpperCase();
+        },
       };
       document.getElementById("demo").innerHTML = person.fullname();
-     
     </script>
   </body>
-
 </html>

@@ -1,0 +1,25 @@
+<html>
+  <h1>
+    Scope determines the accessibility (visibility) of variables. JavaScript
+    variables have 3 types of scope: Global scope Function scope Block scope
+  </h1>
+  <h4>Var has Global Scope</h4>
+  <h4>Let and Const were Introduced in ES6 they can be used in Block Scope</h4>
+  <h4>
+    They have global Scope if used outside of function <br />
+    they have function scope if used inside a function <br />They were made
+    purely for the block scope purpose
+  </h4>
+  <p id="demo"></p>
+
+  <body>
+    <script>
+      var value = 20;
+      let blockvalue = 40;
+      const Valwithconst = 60;
+
+      document.getElementById("demo").innerHTML =
+        value + "<br>" + blockvalue + "<br>" + Valwithconst;
+    </script>
+  </body>
+</html>
