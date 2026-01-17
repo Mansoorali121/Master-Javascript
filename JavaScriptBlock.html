@@ -1,4 +1,5 @@
 <html>
+    <body></body>
   <h1>
     Scope determines the accessibility (visibility) of variables. JavaScript
     variables have 3 types of scope: Global scope Function scope Block scope
@@ -12,14 +13,26 @@
   </h4>
   <p id="demo"></p>
 
-  <body>
+  
     <script>
-      var value = 20;
-      let blockvalue = 40;
-      const Valwithconst = 60;
+    //   var value = 20;
+    //   let blockvalue = 40;
+    //   const Valwithconst = 60;
+    // function testscope  ( ) {
+    //     var value = 20;
+    //     let blockvalue = 40;
+    //     const Valwithconst = 60;
+    //     return value + " " + blockvalue + " " + Valwithconst;
+    // }
+    {
+        let blockvalue = 200;
+        const Valwithconst = 600;
 
-      document.getElementById("demo").innerHTML =
-        value + "<br>" + blockvalue + "<br>" + Valwithconst;
+         document.getElementById("demo").innerHTML = blockvalue + " " + Valwithconst;
+    }
+
+     
+        
     </script>
   </body>
 </html>
