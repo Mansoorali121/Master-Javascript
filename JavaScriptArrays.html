@@ -73,7 +73,7 @@ document.getElementById("demo").innerHTML = comma_separated;
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 <h1>JavaScript Arrays</h1>
@@ -92,4 +92,56 @@ document.getElementById("demo2").innerHTML = fruits;
 </script>
 
 </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1> 
+<h2>The toString() Method</h2>
+
+<p>The toString() method returns the elements of an array as a comma separated string:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let myList = fruits.toString();
+document.getElementById("demo").innerHTML = myList;
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<html>
+<body>
+  <h1>JavaScript Arrays Searching</h1>
+  <p>Finding Index of Elements of Array</p>
+  <h4>original Array is: </h4>
+  <p id="demo1"></p>
+  <h3>Now Finding the element Number where is is located: </h3>
+   <p id="demo"></p>
+
+  <script>
+    const fruits = ["Mango","Banana","Apple","Orange","Grapes"];
+    document.getElementById("demo1").innerHTML = fruits;
+
+    let index_of_mango = fruits.indexOf("Mango")+1;
+
+    document.getElementById("demo").innerHTML = "Number of Mango is: " + index_of_mango;
+
+
+  </script>
+
+</body>
+
 </html>
