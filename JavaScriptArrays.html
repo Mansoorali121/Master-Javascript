@@ -68,7 +68,7 @@ document.getElementById("demo").innerHTML = comma_separated;
 </script>
 
 </body>
-</html> --> --> --> 
+</html> --> 
  
 
 
@@ -121,7 +121,7 @@ document.getElementById("demo").innerHTML = myList;
 
 
 
-
+<!-- 
 <html>
 <body>
   <h1>JavaScript Arrays Searching</h1>
@@ -144,4 +144,28 @@ document.getElementById("demo").innerHTML = myList;
 
 </body>
 
+</html> -->
+
+<html>
+
+<body>
+<h1>JavaScript Arrays Include Method: </h1>
+<h4>It Find out the Item from the array is yes then true otherwise false </h4>
+<p>Original Array is: </p>
+<h5 id="demo1"></h5>
+<h4>We are finding the Element Apple from the array: </h4>
+<p>Now finding the index will be true: </p>
+
+<p id="demo"> </p>
+<script>
+
+  const fruits = ["Mango","Banana","Apple","Orange","Grapes"];
+  document.getElementById("demo1").innerHTML = fruits;
+  const find_value = fruits.includes("Apple");
+  document.getElementById("demo").innerHTML = find_value;
+</script>
+
+
+
+</body>
 </html>
