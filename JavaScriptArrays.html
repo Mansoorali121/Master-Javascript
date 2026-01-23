@@ -185,22 +185,47 @@ document.getElementById("demo").innerHTML = myList;
 </html> -->
 
 
-<html>
+<!-- <html>
 
 
 <body>
 
   <h1>JavaScript Arrays Sorting</h1>
-  <h4>Sorting Array in Ascending Order</h4>
+  <h4>Sorting Array in Disending Order</h4>
   <h3>original Array is</h3>
   <p id="demo"></p>
-  <h3>After Sorting the Array in Ascending Order is:</h3>
+  <h3>After Sorting the Array in Disending Order is:</h3>
   <p id="demo2"></p>
   <script>
     const fruits = ["Mango","Banana","Apple","Orange","Grapes"];
     document.getElementById("demo").innerHTML = fruits;
-    fruits.sort();
+    fruits.reverse();
     document.getElementById("demo2").innerHTML = fruits;
   </script>
 </body>
+</html> -->
+
+
+<html>
+  <body>
+    <h1>JavaScript Array Iteration</h1>
+    <h4>Using forEach Loop to iterate Array</h4>
+ 
+    <p id="demo"></p>
+  
+
+
+    <script>
+      const num_array = [10,20,30,40,50];
+      let text = "";
+      num_array.forEach(myArrayIterate);
+      document.getElementById("demo").innerHTML = text;
+
+      function myArrayIterate(value){
+          text += value + "<br>";
+      }
+
+
+    </script>
+  </body>
 </html>
