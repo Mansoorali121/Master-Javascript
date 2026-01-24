@@ -239,13 +239,13 @@ document.getElementById("demo").innerHTML = myList;
 
 <p>Create a new array by performing a function on each array element:</p>
 
-<p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 const numbers1 = [45, 4, 9, 16, 25];
 const numbers2 = numbers1.map(mymap);
 
-document.getElementById("demo").innerHTML = numbers2;
+document.getElementById("demo1").innerHTML = numbers2;
 function mymap(value){
 return value ;
 }
@@ -257,7 +257,7 @@ return value ;
 </html>
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -280,4 +280,26 @@ function myFunction(value) {
 </script>
 
 </body>
+</html> -->
+
+
+<html>
+  <body>
+    <h1>JavaScript Arrays </h1>
+    <h4>JavaScript Array Filter Method again</h4>
+    <p id="demo"></p>
+
+    <script>
+      const value = [10,12,15,18,23,42];
+      const val_filter = value.filter(myFiltered);
+      document.getElementById("demo").innerHTML = val_filter;
+
+      function myFiltered (get_val){
+        return get_val > 5;
+      }
+
+
+    </script>
+  </body>
+
 </html>
