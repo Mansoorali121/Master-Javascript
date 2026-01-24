@@ -1,21 +1,19 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>JavaScript Errors and their types:</h1>
-    <h4>
-      A ReferenceError occurs if you use (reference) a variable that does not
-      exist.
-    </h4>
-    <p id="demo"></p>
+<body>
+<h1>JavaScript Errors</h1>
+<h2>The TypeError</h2>
 
-    <script>
-      let x = 5;
+<p id="demo"></p>
 
-      try {
-        x = y + 1;
-      } catch (err) {
-        let text = err.name;
-      }
-      document.getElementById("demo").innerHTML = text;
-    </script>
-  </body>
+<script>
+try {
+  Anna(5);
+} catch(err) {
+  let text = document.getElementById("demo").innerHTML = err.name + "<br>" + err.message;
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
 </html>
