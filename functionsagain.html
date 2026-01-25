@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      h4 {
+        color: green;
+      }
+
+      p {
+        color: red;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>JavaScript Functions Again</h1>
+    <h4>Simple and Local Function</h4>
+    <p id="demo"></p>
+
+    <script>
+      const x = function myFunction() {
+        return "My Local Function";
+      }
+
+      document.getElementById("demo").innerHTML = x();
+    </script>
+  </body>
+</html>
