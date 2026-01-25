@@ -24,15 +24,15 @@
 
   <body>
     <h1>JavaScript Functions Again</h1>
-    <h4>Simple and Local Function</h4>
+    <h4>The arguments.length property returns the number of arguments received by the function:</h4>
     <p id="demo"></p>
 
     <script>
-      const x = function myFunction() {
-        return "My Local Function";
+      function myFunction(a,b,c) {
+        return arguments.length;
       }
 
-      document.getElementById("demo").innerHTML = x();
+      document.getElementById("demo").innerHTML= myFunction(2,3,4);
     </script>
   </body>
 </html>
