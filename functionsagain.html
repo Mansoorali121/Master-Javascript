@@ -91,3 +91,43 @@ document.getElementById("demo4").innerHTML = message;
 </body>
 </html>
 
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+<h2>The call() Method</h2>
+<p>This example calls the fullName method of person, using it on person1.</p>
+
+<p id="demo4"></p>
+
+<script>
+// Create a person Object
+const personn = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+// Create a person1 Object
+const person11 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+// Create a person2 Object
+const person22 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+
+let name = personn.fullName.call(person11); 
+document.getElementById("demo4").innerHTML = name;
+</script>
+
+</body>
+</html>
+
+
