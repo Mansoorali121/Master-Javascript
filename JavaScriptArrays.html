@@ -342,11 +342,13 @@ function myFunction(total, value) {
 
 <script>
 const numbers = [4, 9, 16, 25, 29];
-let first = numbers.find(25);
+let first = numbers.find(myFunction);
 
-document.getElementById("demo").innerHTML = "First number over 18 is " + first;
+document.getElementById("demo").innerHTML = "First number Less than 5 is " + first;
 
-
+function myFunction(value) {
+  return value <5 ;
+}
 </script>
 
 </body>
